@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang:"en">
+
+<head>
+	<!--jQuery-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" type=text/javascript>
+	</script>
+	<script src = "friend-tablejQ.js" type="text/javascript">
+	</script>
+
+	<style>
+		* {font-family: arial}
+			.input1 {font-size: 16pt}
+				table {border: 1px solid black; width: 100%; font-size: 16pt}
+				#firstrow {font-weight: bold; text-align: left;"}	
+	</style>
+
+<title>Friend Table</title>
+
+<script lang='javascript'>
+"use strict";
+
+				var fRIENDS = []	//set global array
+
+// 	function ready1() {
+// 		fRIENDS = [
+// 				{ Name: 'Raffee', Email: 'rjsmith912@gmail.com', Cell: '513-483-9348' },
+// 				{ Name: 'John', Email: 'jtron1991@gmail.com', Cell: '513-483-1232' },
+// 				{ Name: 'Chris', Email: 'donttrashdanati@gmail.com', Cell: '513-483-2343' },
+// 				{ Name: 'Vy', Email: 'vpham92@gmail.com', Cell: '513-492-3443' },
+// 				{ Name: 'Yen', Email: 'bauyen@gmail.com', Cell: '859-721-2424' },
+// 				{ Name: 'Lyna', Email: 'lillyna@gmail.com', Cell: '859-721-2565' },
+// 		];
+// 				var tableCtrl1 = document.getElementById('tableCtrl');
+
+// 		for (var idx = 0; idx <fRIENDS.length ; idx++) {
+
+// 				var Name = fRIENDS[idx].Name;
+// 				var Email = fRIENDS[idx].Email;
+// 				var Cell = fRIENDS[idx].Cell;
+
+// 			console.log('identified variables')
+
+// 					tableCtrl1.innerHTML += "<tr>"
+// 					 + "<td>" + Name + "</td>"
+// 					 + "<td>" + Email + "</td>"
+// 					 + "<td>" + Cell + "</td>"
+// 					 + "</tr>";
+
+// 			console.log('looping')
+// 		}
+// 	}
+// 				var nameCtrl = null;	//set global values to null 
+// 				var emailCtrl = null;
+// 				var cellCtrl = null;
+
+// function plusfrend() { 
+// 				var tableCtrl1 = document.getElementById('tableCtrl');
+// 					nameCtrl = document.getElementById('friendnameCtrl');
+// 					emailCtrl = document.getElementById('emailCtrl');
+// 					cellCtrl = document.getElementById('cellCtrl');
+// 				var obj = {}
+// 						obj.Name = nameCtrl.value
+// 						obj.Email = emailCtrl.value
+// 						obj.Cell = cellCtrl.value
+
+// 			console.log('created friend')	
+		
+// 		fRIENDS.push(obj)
+
+// 		for (var idx = (fRIENDS.length - 1) ; idx <fRIENDS.length ; idx++) {
+// 				var Name = fRIENDS[idx].Name;
+// 				var Email = fRIENDS[idx].Email;
+// 				var Cell = fRIENDS[idx].Cell;
+
+// 			console.log('identified variables')
+
+// 					tableCtrl1.innerHTML += "<tr>" //loop table input 		
+// 					 + "<td>" + Name + "</td>"
+// 					 + "<td>" + Email + "</td>"
+// 					 + "<td>" + Cell + "</td>"
+// 					 + "</tr>";
+
+// 			console.log('Added Friend')
+
+// 				nameCtrl.value = "" //Reset input values
+// 				emailCtrl.value = ""
+// 				cellCtrl.value = "" 
+		// }
+// }
+</script>	
+</head>
+	<body>
+
+		<input class = "input1" id = 'friendnameCtrl' type="text" name="Name" placeholder="Name of Friend">
+		<input class = "input1" id = 'emailCtrl' type="text" name="Name" placeholder="E-mail Address">
+			<input class = "input1" id = 'cellCtrl' type="text" name="Name" placeholder="Mobile Number">
+				<button class = 'input1' id="submitButton">Submit</button>
+		
+		<p>
+		<table>
+			<thead></thead>
+				<tbody id = "tableCtrl">
+					<tr id= "firstrow"><td>Name</td><td>Email</td><td>Cellphone</td></tr>
+				</tbody>
+		</table>
+		</p>
+	</body>
+</html>	
